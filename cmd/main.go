@@ -5,7 +5,5 @@ import (
 )
 
 func main() {
-	// Run HTTP Server ssss
-	// mantap
 	http.RunHttp()
 }

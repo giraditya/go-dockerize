@@ -1,8 +1,9 @@
-FROM golang:1.19.0
+FROM golang:1.19-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-RUN go install github.com/cosmtrek/air@latest
-
-COPY . .
+COPY go.mod go.sum ./
 RUN go mod tidy
+RUN go build -o binary
+
+ENTRYPOINT ["/app/binary"]
