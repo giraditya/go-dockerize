@@ -1,4 +1,4 @@
-package httpx
+package http
 
 func RunHttp() {
 	app := setupRouter()

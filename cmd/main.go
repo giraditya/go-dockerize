@@ -1,7 +1,16 @@
 package main
 
-import "github.com/giriaditya/hot-reload/pkg/cmd/httpx"
+import (
+	"fmt"
+
+	"github.com/giriaditya/hot-reload/pkg/cmd/http"
+)
 
 func main() {
-	httpx.RunHttp()
+	http.RunHttp()
+	echoHello()
+}
+
+func echoHello() {
+	fmt.Println("Hello")
 }

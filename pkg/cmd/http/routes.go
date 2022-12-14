@@ -1,4 +1,4 @@
-package httpx
+package http
 
 import (
 	"github.com/gin-contrib/cors"
@@ -23,6 +23,11 @@ func initRoutesBassic(route *gin.Engine) {
 	groupRoute.GET("/check/health", func(ctx *gin.Context) {
 		ctx.JSON(200, gin.H{
 			"message": "okseebangetsih",
+		})
+	})
+	groupRoute.GET("/check/load", func(ctx *gin.Context) {
+		ctx.JSON(200, gin.H{
+			"message": "200",
 		})
 	})
 }
