@@ -22,7 +22,7 @@ func initRoutesBassic(route *gin.Engine) {
 	groupRoute := route.Group("/v1")
 	groupRoute.GET("/check/health", func(ctx *gin.Context) {
 		ctx.JSON(200, gin.H{
-			"message": "oks",
+			"message": "okseebangetsih",
 		})
 	})
 }
