@@ -27,7 +27,7 @@ func initRoutesBassic(route *gin.Engine) {
 	})
 	groupRoute.GET("/check/load", func(ctx *gin.Context) {
 		ctx.JSON(200, gin.H{
-			"message": "100",
+			"message": "70",
 		})
 	})
 }
